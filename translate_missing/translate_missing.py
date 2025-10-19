@@ -51,7 +51,7 @@ def remove_extra_keys(master_dict, target_dict):
     return target_dict
 
 
-def translate_and_update(missing_keys, target_data, lang):
+def translate_and_update(missing_keys, target_data, lang, marker=None):
     """
     Translate the missing keys and update the target dictionary.
 
@@ -59,16 +59,19 @@ def translate_and_update(missing_keys, target_data, lang):
         missing_keys (dict): A dictionary of missing keys to translate.
         target_data (dict): The dictionary to update with the translated keys.
         lang (str): The target language for translation.
+        marker (str, optional): A marker to prepend to automated translations for easy identification by human translators. Defaults to None.
     """
     translator = GoogleTranslator(source="en", target=lang)
     for key, value in missing_keys.items():
         if isinstance(value, dict):
             if key not in target_data:
                 target_data[key] = {}
-            translate_and_update(value, target_data[key], lang)
+            translate_and_update(value, target_data[key], lang, marker)
         elif isinstance(value, str):
             try:
                 translated_text = translator.translate(value)
+                if marker:
+                    translated_text = f"[{marker}] {translated_text}"
                 target_data[key] = translated_text
                 print(f"Translated '{value}' to '{translated_text}' for {lang}")
             except Exception as e:
@@ -93,6 +96,11 @@ def main():
         type=str,
         default="en",
         help="The master language to translate from.",
+    )
+    parser.add_argument(
+        "--marker",
+        type=str,
+        help="A marker to prepend to automated translations, making them easy for human translation teams to identify and review.",
     )
     args = parser.parse_args()
 
@@ -125,7 +133,7 @@ def main():
         if missing_keys:
             print(f"Missing keys for {lang}:")
             print(json.dumps(missing_keys, indent=2, ensure_ascii=False))
-            translate_and_update(missing_keys, updated_target_data, lang)
+            translate_and_update(missing_keys, updated_target_data, lang, args.marker)
 
         with open(target_filepath, "w", encoding="utf-8") as f:
             json.dump(updated_target_data, f, indent=4, ensure_ascii=False)

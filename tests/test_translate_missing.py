@@ -56,5 +56,20 @@ class TestTranslateMissing(unittest.TestCase):
         mock_translator.translate.assert_any_call("hello")
         mock_translator.translate.assert_any_call("world")
 
+    @patch('translate_missing.translate_missing.GoogleTranslator')
+    def test_translate_and_update_with_marker(self, MockTranslator):
+        mock_translator = MockTranslator.return_value
+        mock_translator.translate.side_effect = lambda text: f"{text}-translated"
+
+        missing_keys = {"a": "hello"}
+        target_data = {}
+        lang = "fr"
+        marker = "GT"
+
+        translate_and_update(missing_keys, target_data, lang, marker)
+
+        self.assertEqual(target_data, {"a": "[GT] hello-translated"})
+        mock_translator.translate.assert_any_call("hello")
+
 if __name__ == '__main__':
     unittest.main()
