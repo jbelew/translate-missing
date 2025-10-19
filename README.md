@@ -10,8 +10,46 @@ pip install translate-missing
 
 ## Usage
 
+Basic usage:
+```bash
+translate-missing --master-lang en --locales-dir path/to/locales
+```
+
+Using an optional marker for automated translations:
 ```bash
 translate-missing --master-lang en --locales-dir path/to/locales --marker GT
+```
+
+## Example
+
+Let's say you have the following translation files:
+
+**en/translation.json**
+```json
+{
+  "hello": "Hello",
+  "world": "World"
+}
+```
+
+**es/translation.json**
+```json
+{
+  "hello": "Hola"
+}
+```
+
+Running the tool with a marker:
+```bash
+translate-missing --master-lang en --locales-dir . --marker "GT"
+```
+
+The `es/translation.json` file will be updated to:
+```json
+{
+  "hello": "Hola",
+  "world": "[GT] Mundo"
+}
 ```
 
 ## Contributing
