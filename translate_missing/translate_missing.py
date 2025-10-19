@@ -85,7 +85,7 @@ def main():
     parser.add_argument(
         "--locales-dir",
         type=str,
-        default="public/assets/locales",
+        default="locales",
         help="The directory where the locale files are stored.",
     )
     parser.add_argument(
