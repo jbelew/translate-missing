@@ -5,6 +5,16 @@ from deep_translator import GoogleTranslator
 
 
 def get_missing_keys(master_dict, target_dict):
+    """
+    Recursively find keys that are in the master dictionary but not in the target dictionary.
+
+    Args:
+        master_dict (dict): The master dictionary.
+        target_dict (dict): The target dictionary.
+
+    Returns:
+        dict: A dictionary containing the missing keys.
+    """
     missing_keys = {}
     for key, value in master_dict.items():
         if key not in target_dict:
@@ -17,6 +27,16 @@ def get_missing_keys(master_dict, target_dict):
 
 
 def remove_extra_keys(master_dict, target_dict):
+    """
+    Recursively remove keys from the target dictionary that are not in the master dictionary.
+
+    Args:
+        master_dict (dict): The master dictionary.
+        target_dict (dict): The target dictionary to remove keys from.
+
+    Returns:
+        dict: The target dictionary with extra keys removed.
+    """
     keys_to_remove = []
     for key, value in target_dict.items():
         if key not in master_dict:
@@ -32,6 +52,14 @@ def remove_extra_keys(master_dict, target_dict):
 
 
 def translate_and_update(missing_keys, target_data, lang):
+    """
+    Translate the missing keys and update the target dictionary.
+
+    Args:
+        missing_keys (dict): A dictionary of missing keys to translate.
+        target_data (dict): The dictionary to update with the translated keys.
+        lang (str): The target language for translation.
+    """
     translator = GoogleTranslator(source="en", target=lang)
     for key, value in missing_keys.items():
         if isinstance(value, dict):
@@ -48,6 +76,9 @@ def translate_and_update(missing_keys, target_data, lang):
 
 
 def main():
+    """
+    Main function to find missing translations, remove extra keys, and translate missing keys.
+    """
     parser = argparse.ArgumentParser(
         description="Translate missing keys in localization files."
     )
