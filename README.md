@@ -11,5 +11,5 @@ pip install .
 ## Usage
 
 ```bash
-translate-missing --locales-dir path/to/locales
+translate-missing --master-lang en --locales-dir path/to/locales
 ```
