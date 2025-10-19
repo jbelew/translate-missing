@@ -1,0 +1,4 @@
+[tool.semantic_release]
+version_variable = "setup.py:__version__"
+upload_to_pypi = true
+build_command = "pip install setuptools wheel && python setup.py sdist bdist_wheel"
