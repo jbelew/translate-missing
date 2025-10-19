@@ -1,4 +1,6 @@
 [tool.semantic_release]
 version_variable = "setup.py:__version__"
 upload_to_pypi = true
-build_command = "pip install setuptools wheel && python setup.py sdist bdist_wheel"
+build_command = ".venv/bin/python -m pip install setuptools wheel && .venv/bin/python setup.py sdist bdist_wheel"
+[tool.semantic_release.changelog]
+changelog_file = "CHANGELOG.md"
