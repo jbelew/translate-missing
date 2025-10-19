@@ -82,6 +82,7 @@ def main():
     """
     Main function to find missing translations, remove extra keys, and translate missing keys.
     """
+    # This is a comment to trigger a new release.
     parser = argparse.ArgumentParser(
         description="Translate missing keys in localization files."
     )
