@@ -1,6 +1,11 @@
 [tool.semantic_release]
 version_variable = "setup.py:__version__"
 upload_to_pypi = true
-build_command = ".venv/bin/python -m pip install setuptools wheel && .venv/bin/python setup.py sdist bdist_wheel"
-[tool.semantic_release.changelog]
+upload_to_release = true
+branch = "main"
+
+# Use standard Python commands; no need for .venv prefix in CI
+build_command = "python -m pip install setuptools wheel && python setup.py sdist bdist_wheel"
+
+[tool.semantic_release.changelog.default_templates]
 changelog_file = "CHANGELOG.md"
