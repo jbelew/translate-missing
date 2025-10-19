@@ -2,6 +2,19 @@
 
 <!-- version list -->
 
+## v1.1.0 (2025-10-19)
+
+### Chores
+
+- Update semantic-release config
+  ([`a4c38f1`](https://github.com/jbelew/translate_missing/commit/a4c38f134aa1ab336673678f3b4b71d441a39d9d))
+
+### Features
+
+- Add test feature for version bump
+  ([`a0c76c1`](https://github.com/jbelew/translate_missing/commit/a0c76c125e45324daabd78846d2b308454c790cb))
+
+
 ## v1.0.1 (2025-10-19)
 
 ### Bug Fixes
