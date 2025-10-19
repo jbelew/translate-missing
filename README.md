@@ -17,7 +17,7 @@ translate-missing --master-lang en --locales-dir path/to/locales
 
 Using an optional marker for automated translations:
 ```bash
-translate-missing --master-lang en --locales-dir path/to/locales --marker GT
+translate-missing --master-lang en --locales-dir path/to/locales --marker "GT"
 ```
 
 ## Example
