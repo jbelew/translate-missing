@@ -51,7 +51,7 @@ def remove_extra_keys(master_dict, target_dict):
     return target_dict
 
 
-def translate_and_update(missing_keys, target_data, lang, marker=None):
+def translate_and_update(missing_keys, target_data, lang, marker=None, dry_run=False):
     """
     Translate the missing keys and update the target dictionary.
 
@@ -66,16 +66,23 @@ def translate_and_update(missing_keys, target_data, lang, marker=None):
         if isinstance(value, dict):
             if key not in target_data:
                 target_data[key] = {}
-            translate_and_update(value, target_data[key], lang, marker)
+            translate_and_update(value, target_data[key], lang, marker, dry_run)
         elif isinstance(value, str):
-            try:
-                translated_text = translator.translate(value)
+            if dry_run:
+                translated_text = f"[DRY RUN] {value}"
                 if marker:
                     translated_text = f"[{marker}] {translated_text}"
                 target_data[key] = translated_text
-                print(f"Translated '{value}' to '{translated_text}' for {lang}")
-            except Exception as e:
-                print(f"Error translating '{value}' for {lang}: {e}")
+                print(f"[DRY RUN] Would translate '{value}' to '{translated_text}' for {lang}")
+            else:
+                try:
+                    translated_text = translator.translate(value)
+                    if marker:
+                        translated_text = f"[{marker}] {translated_text}"
+                    target_data[key] = translated_text
+                    print(f"Translated '{value}' to '{translated_text}' for {lang}")
+                except Exception as e:
+                    print(f"Error translating '{value}' for {lang}: {e}")
 
 
 def main():
@@ -102,6 +109,11 @@ def main():
         "--marker",
         type=str,
         help="A marker to prepend to automated translations, making them easy for human translation teams to identify and review.",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Perform a dry run without making any changes to files.",
     )
     args = parser.parse_args()
 
@@ -134,11 +146,14 @@ def main():
         if missing_keys:
             print(f"Missing keys for {lang}:")
             print(json.dumps(missing_keys, indent=2, ensure_ascii=False))
-            translate_and_update(missing_keys, updated_target_data, lang, args.marker)
+            translate_and_update(missing_keys, updated_target_data, lang, args.marker, args.dry_run)
 
-        with open(target_filepath, "w", encoding="utf-8") as f:
-            json.dump(updated_target_data, f, indent=4, ensure_ascii=False)
-        print(f"Updated and cleaned {target_filepath}")
+        if args.dry_run:
+            print(f"[DRY RUN] Would update and clean {target_filepath}")
+        else:
+            with open(target_filepath, "w", encoding="utf-8") as f:
+                json.dump(updated_target_data, f, indent=4, ensure_ascii=False)
+            print(f"Updated and cleaned {target_filepath}")
 
 
 if __name__ == "__main__":

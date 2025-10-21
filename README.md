@@ -22,6 +22,11 @@ Using an optional marker for automated translations:
 translate-missing --master-lang en --locales-dir path/to/locales --marker "GT"
 ```
 
+To see what changes would be made without actually writing them to files, use the `--dry-run` option:
+```bash
+translate-missing --master-lang en --locales-dir path/to/locales --dry-run
+```
+
 ## Example
 
 Let's say you have the following translation files:
