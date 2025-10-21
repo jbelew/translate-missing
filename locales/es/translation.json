@@ -1,9 +1,5 @@
 {
-    "appHeader": {
-        "subTitle": "<1>IA</1> Optimizador de Diseño de Tecnología"
-    },
     "languageInfo": {
-        "nativeName": "Español (Generado por IA)",
         "changeLanguage": "Cambiar idioma",
         "selectLanguage": "Seleccionar idioma"
     },
@@ -51,12 +47,12 @@
         "titles": {
             "instructions": "Instrucciones",
             "about": "Acerca de",
-            "changelog": "Registro de cambios",
-            "serverError": "¡Error del servidor!",
             "optimizationAlert": "Alerta de optimización",
             "translationRequest": "¡Se necesitan traductores!",
             "shareLink": "Compartir el diseño de la cuadrícula",
-            "userStats": "Estadísticas de usuario"
+            "userStats": "Estadísticas de usuario",
+            "changelog": "Registro de cambios",
+            "serverError": "¡Error del servidor!"
         },
         "userStats": {
             "noDataForChart": "No hay datos disponibles para este gráfico.",
@@ -68,7 +64,6 @@
             "closeButton": "Cerca"
         },
         "optimizationAlert": {
-            "warning": "-kzzkt- ¡Advertencia! -kzzkt-",
             "insufficientSpace": "No hay suficiente espacio para colocar eficazmente todos los módulos para la tecnología <1>{{technologyName}}</1>. Esto suele ocurrir cuando se seleccionan demasiadas tecnologías para tu plataforma.",
             "forceOptimizeSuggestion": "Puedes intentar <1>\"Forzar optimización\"</1> para una solución más intensiva, pero probablemente no encontrará un diseño óptimo. Considera reordenar tus tecnologías o seleccionar menos para mejorar el resultado.",
             "cancelButton": "Cancelar",
@@ -87,9 +82,7 @@
         "builtBy": "Construido por jbelew (void23 | QQ9Y-EJRS-P8KGW) • {{buildVersion}}",
         "supportPrompt": "Si encontraste útil esta aplicación, considera apoyar su desarrollo con: "
     },
-    "translationRequest": {
-        "openDialogLabel": "¡Se necesitan traductores!"
-    },
+    "translationRequest": {},
     "platformLabel": "PLATAFORMA:",
     "platforms": {
         "standard": "Naves Estelares Estándar / Exóticas",
@@ -158,7 +151,6 @@
             "aquajet": "Aqua-Jets",
             "bobble": "Figuritas",
             "scanner": "Escáneres",
-            "economy": "Escáner de Economía",
             "cargo": "Deflector de Escaneo de Carga",
             "conflict": "Escáner de Conflicto",
             "trails": "Estelas de Nave Estelar",
@@ -229,11 +221,9 @@
             "radiation": "Blindaje de Neutrones",
             "toxic": "Unidad de Filtración de Aire",
             "radar": "Radar de Exocraft",
-            "amplifier": "Amplificador de Radar",
             "power": "Resonador de Energía",
             "humboldt": "Propulsión Humboldt",
             "tethys": "Rayo Tethys",
-            "nautilon": "Cañón Nautilon",
             "sonar": "Sonar de Alta Potencia",
             "dredging": "Láser de Dragado",
             "environment": "Unidad de Control Ambiental",
@@ -247,13 +237,13 @@
             "bore": "Taladro de Minotauro",
             "array": "Matriz de Radar",
             "hardframe-left": "Brazo Izquierdo de Armazón Reforzado",
-            "liquidator-left": "Brazo Izquierdo de Liquidador",
             "hardframe-right": "Brazo Derecho de Armazón Reforzado",
             "liquidator-right": "Brazo Derecho de Liquidador",
             "minotaur": "Cañón Minotauro",
             "minotaur-laser": "Láser de minotauro",
             "precision": "Láser de Minotauro de Precisión",
-            "mineral": "Plataforma de Procesamiento de Minerales"
+            "mineral": "Plataforma de Procesamiento de Minerales",
+            "amplifier": "Amplificador de radar"
         },
         "exosuit": {
             "aeration": "Membrana de Aireación",
@@ -268,7 +258,6 @@
             "forbidden": "Módulos de Exotraje Prohibidos",
             "life": "Soporte Vital",
             "denier": "Marca del Negador",
-            "rebuilt": "Módulos de Exotraje Reconstruidos",
             "remembrance": "Remembranza",
             "protection": "Malla de Escudo",
             "starseed": "Semilla Estelar",
@@ -280,7 +269,8 @@
             "nutrient": "Ingestor de Nutrientes",
             "refiner": "Refinador Personal",
             "trade": "Cohete de Comercio",
-            "translator": "Dispositivos de Traducción Automática"
+            "translator": "Dispositivos de Traducción Automática",
+            "rebuilt": "Módulos de exotraje reconstruidos"
         },
         "corvette": {
             "cockpit": "Cabina de corvette",
@@ -329,7 +319,6 @@
             "pulse": "Motor de Pulso",
             "flight-assist": "Anulación de Asistencia de Vuelo",
             "photonix": "Núcleo Photonix",
-            "sublight": "Amplificador Sub-Luz",
             "instability": "Impulso de Inestabilidad",
             "pulse-upgrade": "Mejora de Motor de Pulso",
             "aquajets": "Aqua-Jets",
@@ -350,7 +339,6 @@
             "stealth-trail": "Estela de Nave Estelar Sigilosa",
             "golden-trail": "Estela de Nave Estelar Dorada",
             "chromatic-trail": "Estela de Nave Estelar Cromática",
-            "teleport": "Receptor de Teletransporte",
             "cannon": "Cañón Centinela",
             "aeron": "Escudos Aeron",
             "anti-gravity": "Pozo Antigravedad",
@@ -373,7 +361,8 @@
             "saline": "Caparazón Salino",
             "wormhole": "Cerebro de Agujero de Gusano",
             "neural": "Blindaje Neural",
-            "vesper": "Vela Vesper"
+            "vesper": "Vela Vesper",
+            "sublight": "Amplificador de luz secundaria"
         },
         "multi-tool": {
             "mining-laser": "Rayo Minero",
@@ -384,7 +373,6 @@
             "fishing": "Aparejo de Pesca",
             "mt-scanner": "Escáner",
             "waveform": "Reciclador de Ondas",
-            "harmonizer": "Armonizador de Escaneo",
             "polyphonic": "Núcleo Polifónico",
             "scanner-upgrade": "Mejora de Escáner",
             "survey": "Dispositivo de Levantamiento",
@@ -419,7 +407,8 @@
             "personal": "Campo de Fuerza Personal",
             "terrian": "Manipulador de Terreno",
             "runic-lens": "Lente rúnica",
-            "hijacked": "Láser Secuestrado"
+            "hijacked": "Láser Secuestrado",
+            "harmonizer": "Armonizador de escaneo"
         },
         "other": {
             "freighter-hyper": "Hiperpropulsor",
@@ -436,10 +425,10 @@
             "freighter-matter": "Rayo de Materia",
             "fleet-fuel": "Mejora de Eficiencia de Combustible de Flota",
             "fleet-speed": "Mejora de Velocidad de Expedición de Flota",
-            "fleet-combat": "Mejora de Combate y Defensa de Flota",
             "fleet-exploration": "Mejora de Exploración y Ciencia de Flota",
             "fleet-mining": "Mejora de Minería e Industrial de Flota",
-            "fleet-trade": "Mejora de Comercio de Flota"
+            "fleet-trade": "Mejora de Comercio de Flota",
+            "fleet-combat": "Mejora de defensa y combate de flota"
         },
         "exocraft": {
             "fusion": "Motor de Fusión",
@@ -462,7 +451,6 @@
             "toxic": "Unidad de Filtración de Aire",
             "radar": "Radar de Exocraft",
             "amplifier": "Amplificador de Radar",
-            "power": "Resonador de Energía",
             "mineral": "Unidad de Procesamiento de Minerales",
             "humboldt": "Propulsión Humboldt",
             "humboldt-upgrade": "Mejora de Propulsión Humboldt",
@@ -481,7 +469,6 @@
             "hardframe-body": "Cuerpo de Armazón Reforzado",
             "liquidator-body": "Cuerpo de Liquidador",
             "bore": "Taladro de Minotauro",
-            "array": "Matriz de Radar",
             "hardframe-left": "Brazo Izquierdo de Armazón Reforzado",
             "liquidator-left": "Brazo Izquierdo de Liquidador",
             "hardframe-right": "Brazo Derecho de Armazón Reforzado",
@@ -491,7 +478,8 @@
             "precision": "Láser de Minotauro de Precisión",
             "osmatic": "Generador Osmático",
             "servos": "Servos Autolubricantes",
-            "liquidator-upgrade": "Mejora de Lanzallamas"
+            "liquidator-upgrade": "Mejora de Lanzallamas",
+            "power": "Resonador de potencia"
         },
         "exosuit": {
             "aeration": "Membrana de Aireación",
@@ -551,5 +539,8 @@
         "optimizeButton": "Optimizar",
         "atlantid": "Módulos Atlántida",
         "cancelButton": "Cancelar"
+    },
+    "appHeader": {
+        "subTitle": "Optimizador de diseño tecnológico <1>IA</1>"
     }
 }

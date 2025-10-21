@@ -167,7 +167,6 @@
             "aeron": "Boucliers Aeron",
             "anti-gravity": "Puits anti-gravité",
             "crimson": "Noyau cramoisi",
-            "luminance": "Propulsion de luminance",
             "pilot": "Interface pilote",
             "vesper": "Voile Vesper",
             "grafted": "Yeux greffés",
@@ -177,20 +176,18 @@
             "singularity": "Cortex de singularité",
             "pulsing": "Cœur pulsant",
             "saline": "Carapace saline",
-            "wormhole": "Scanners de trou de ver"
+            "wormhole": "Scanners de trou de ver",
+            "luminance": "Entraînement de luminance"
         },
         "multi-tool": {
             "hijacked": "Laser Détourné",
             "mining-laser": "Faisceau minier",
             "mining-beam": "Faisceau minier",
             "analysis": "Visière d'analyse",
-            "fishing": "Engin de pêche",
             "mt-scanner": "Scanner",
             "survey": "Dispositif d'arpentage",
             "blaze-javelin": "Javelot ardent",
-            "boltcaster": "Boulonneur",
             "bolt-caster": "Casse-pied",
-            "geology": "Canon de géologie",
             "neutron": "Canon à neutrons",
             "plasma-launcher": "Lance-plasma",
             "pulse-spitter": "Cracheur à impulsion",
@@ -201,7 +198,8 @@
             "paralysis": "Mortier de paralysie",
             "personal": "Champ de force personnel",
             "terrian": "Manipulateur de terrain",
-            "runic": "Lentille runique"
+            "runic": "Lentille runique",
+            "boltcaster": "Lanceur de boulons"
         },
         "other": {
             "freighter-hyper": "Hyperpropulseur",
@@ -221,7 +219,6 @@
             "slide": "Suspension Hi-Slide",
             "drift": "Suspension Drift",
             "grip": "Suspension Grip Boost",
-            "mining": "Laser Minier",
             "mounted": "Canon Monté",
             "flamethrower": "Lance-flammes Monté",
             "thermal": "Tampon Thermique",
@@ -253,7 +250,8 @@
             "minotaur": "Canon Minotaure",
             "minotaur-laser": "Laser Minotaure",
             "precision": "Laser Minotaure de Précision",
-            "mineral": "Installation de Traitement des Minéraux"
+            "mineral": "Installation de Traitement des Minéraux",
+            "mining": "Laser minier"
         },
         "exosuit": {
             "aeration": "Membrane d'Aération",
@@ -356,7 +354,6 @@
             "anti-gravity": "Puits anti-gravité",
             "crimson": "Noyau cramoisi",
             "luminance": "Propulsion de luminance",
-            "pilot": "Interface pilote",
             "grafted": "Yeux greffés",
             "grafted-upgrade": "Amélioration d'Yeux greffés",
             "spewing": "Évents à éructations",
@@ -364,7 +361,6 @@
             "scream": "Suppresseur de hurlement",
             "scream-upgrade": "Amélioration de Suppresseur de hurlement",
             "assembly": "Assemblage neuronal",
-            "assembly-upgrade": "Amélioration d'Assemblage neuronal",
             "chloroplast": "Membrane de chloroplaste",
             "singularity": "Cortex de singularité",
             "singularity-upgrade": "Amélioration de Cortex de singularité",
@@ -373,7 +369,8 @@
             "saline": "Carapace saline",
             "wormhole": "Cerveau de trou de ver",
             "neural": "Blindage neural",
-            "vesper": "Voile Vesper"
+            "vesper": "Voile Vesper",
+            "assembly-upgrade": "Mise à niveau de l'assemblage neuronal"
         },
         "multi-tool": {
             "mining-laser": "Laser minier",
@@ -402,7 +399,6 @@
             "neutron": "Canon à neutrons",
             "p-field": "Compresseur de champ P",
             "neutron-upgrade": "Amélioration de Canon à neutrons",
-            "plasma-launcher": "Lance-plasma",
             "plasma-upgrade": "Amélioration de Lance-plasma",
             "pulse-spitter": "Cracheur à impulsion",
             "amplified": "Cartouches amplifiées",
@@ -419,16 +415,15 @@
             "personal": "Champ de force personnel",
             "terrian": "Manipulateur de terrain",
             "runic-lens": "Lentille runique",
-            "hijacked": "Laser détourné"
+            "hijacked": "Laser détourné",
+            "plasma-launcher": "Lanceur de plasma"
         },
         "other": {
             "freighter-hyper": "Hyperpropulseur",
-            "freighter-hyperdrive": "Hyperpropulsion",
             "freighter-temporal": "Ordinateur de chaîne temporelle",
             "freighter-reality": "Réalité de la réalité",
             "freighter-resonance": "Matrice de résonance",
             "freighter-plasmatic": "Injecteur de chaîne plasmatique",
-            "freighter-amplified": "Bouliement de déformation amplifié",
             "freighter-warpcore": "Résonateur de noyau de guerre",
             "freighter-chromatic": "Boundage de chaîne chromatique",
             "freighter-upgrade": "Mise à niveau hyperdrive",
@@ -437,14 +432,14 @@
             "fleet-fuel": "Efficacité carburant de flotte",
             "fleet-speed": "Vitesse d'expédition de flotte",
             "fleet-combat": "Combat et défense de flotte",
-            "fleet-exploration": "Exploration et science de flotte",
             "fleet-mining": "Minage et industriel de flotte",
-            "fleet-trade": "Minage et industriel de flotte"
+            "fleet-trade": "Minage et industriel de flotte",
+            "freighter-hyperdrive": "Hyperpropulsion",
+            "freighter-amplified": "Blindage contre la distorsion amplifié"
         },
         "exocraft": {
             "fusion": "Moteur à Fusion",
             "fusion-upgrade": "Amélioration de Moteur à Fusion",
-            "icarus": "Système de Carburant Icarus",
             "boost": "Module de Boost d'Exocraft",
             "boost-upgrade": "Amélioration de Boost d'Exocraft",
             "slide": "Suspension Hi-Slide",
@@ -506,7 +501,6 @@
             "radiation-upgrade": "Amélioration de Déflecteur de Radiation",
             "thermic": "Couche Thermique",
             "thermic-upgrade": "Amélioration de Couche Thermique",
-            "toxin": "Suppresseur de Toxines",
             "toxin-upgrade": "Amélioration de Suppresseur de Toxines",
             "forbidden": "Module d'Exosuit Interdit",
             "life": "Support Vital",
@@ -517,7 +511,6 @@
             "protection": "Treillis de Bouclier",
             "protection-upgrade": "Mise à niveau du réseau de bouclier",
             "starseed": "Graine Étoile",
-            "jetpack": "Jetpack",
             "jetpack-upgrade": "Amélioration de Jetpack",
             "boots": "Bottes-roquettes",
             "skiff": "Skiff Exo",
@@ -529,12 +522,12 @@
             "artemis-translator": "Traducteur d'Artémis",
             "simple": "Traducteur Simple",
             "superior": "Traducteur Supérieur",
-            "advanced": "Traducteur Avancé",
             "airburst": "Moteur à éclatement",
             "recycler": "Recycleur d'oxygène",
             "neural": "Stimulateur neural",
             "waterjets": "Hydropropulseurs efficaces",
-            "rerouter": "Rerouteur d'oxygène"
+            "rerouter": "Rerouteur d'oxygène",
+            "advanced": "Traducteur avancé"
         }
     },
     "moduleSelection": {
@@ -548,8 +541,6 @@
         "selectAll": "Sélectionnez tout",
         "closeDialogLabel": "Fermer le dialogue",
         "cosmeticInfo": "Les modules <strong>Cosmetic</strong> suggérés peuvent aider à augmenter légèrement vos statistiques finales, mais <i>ne les laissez pas limiter vos idées de conception!</i> Faire correspondre simplement le nombre de modules cosmétiques sur votre Corvette pour le meilleur résolution possible.",
-        "optimizeButton": "Optimiser",
-        "atlantid": "Modules Atlantides",
-        "cancelButton": "Annuler"
+        "optimizeButton": "Optimiser"
     }
 }

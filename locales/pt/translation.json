@@ -61,11 +61,11 @@
         "userStats": {
             "noDataForChart": "Nenhum dado disponível para este gráfico.",
             "description": "Essa caixa de diálogo exibe estatísticas agregadas do usuário com base nas interações com o otimizador, destacando as tecnologias mais comumente sobrecarregadas para naves estelares, várias ferramentas e corvettes.",
-            "error": "Falha ao carregar estatísticas do usuário. Por favor, tente novamente mais tarde.",
             "starshipChartTitle": "Tecnologias Esportivas",
             "multitoolChartTitle": "Tecnologias de várias ferramentas",
             "corvetteChartTitle": "Tecnologias de Corvette",
-            "closeButton": "Fechar"
+            "closeButton": "Fechar",
+            "error": "Falha ao carregar estatísticas do usuário. Por favor, tente novamente mais tarde."
         },
         "optimizationAlert": {
             "warning": "-kzzkt- aviso! -kzzkt-",
@@ -78,8 +78,8 @@
             "description": "Copie o link abaixo para compartilhar seu layout atual da grade. Observe que este URL é um instantâneo e não será atualizado automaticamente.",
             "copyButton": "Link de cópia",
             "copiedButton": "Copiado!",
-            "closeButton": "Fechar",
-            "openLink": "Link aberto"
+            "openLink": "Link aberto",
+            "closeButton": "Fechar"
         }
     },
     "footer": {
@@ -92,7 +92,6 @@
     },
     "platformLabel": "PLATAFORMA:",
     "platforms": {
-        "standard": "Naves estelares padrão / exóticas",
         "sentinel": "Interceptores Sentinel",
         "solar": "Naves solares",
         "living": "Naves vivas",
@@ -108,7 +107,8 @@
         "colossus": "Colossus exocraft",
         "minotaur": "Minotauro Exocraft",
         "exosuit": "Exame",
-        "corvette": "Corvette (beta)"
+        "corvette": "Corvette (beta)",
+        "standard": "Naves padrão/exóticas"
     },
     "techTree": {
         "loading": "Carregando dados da plataforma ...",
@@ -134,8 +134,7 @@
             "Life Support": "Suporte de Saúde e Vida",
             "Hazard Protection": "Proteção de risco",
             "Quest Rewards": "Recompensas da missão",
-            "Upgrade Modules": "Módulos de atualização",
-            "Movement Systems": "Sistemas de movimento"
+            "Movement Systems": "Sistemas de Movimento"
         },
         "recommendedBuilds": {
             "selectBuildButton": "Selecione uma compilação recomendada",
@@ -145,7 +144,6 @@
     },
     "technologies": {
         "starship": {
-            "cyclotron": "Ciclotron Ballista",
             "infra": "Acelerador da Infraknife",
             "phase": "Feixe de fase",
             "photon": "Canhão de fóton",
@@ -177,7 +175,8 @@
             "singularity": "Córtex de singularidade",
             "pulsing": "Coração pulsante",
             "saline": "Carapaça salina",
-            "wormhole": "Escaneadores"
+            "wormhole": "Escaneadores",
+            "cyclotron": "Balista Ciclotron"
         },
         "multi-tool": {
             "hijacked": "Laser sequestrado",
@@ -204,7 +203,6 @@
             "runic": "Lente rúnica"
         },
         "other": {
-            "freighter-hyper": "Hiperdrive cargueiro",
             "freighter-scanner": "Scanner interestelar",
             "freighter-matter": "Feixe de matéria",
             "fleet-fuel": "Eficiência de combustível",
@@ -223,7 +221,6 @@
             "grip": "Suspensão de aumento de aderência",
             "mining": "Laser de mineração",
             "mounted": "Canhão montado",
-            "flamethrower": "Flametrista montado",
             "thermal": "Tampão térmico",
             "cold": "Aquecedor de megawatt",
             "radiation": "Blindagem de nêutrons",
@@ -238,13 +235,11 @@
             "dredging": "Laser de dragagem",
             "environment": "Unidade de Controle de Meio Ambiente",
             "ariadnes": "Chama de Ariadne",
-            "daedalus": "Motor daédalo",
             "hardframe-legs": "Pernas de quadro hard",
             "liquidator-legs": "Pernas do liquidatário",
             "ai": "Ai piloto",
             "hardframe-body": "Corpo do quadro hard",
             "liquidator-body": "Corpo do liquidatário",
-            "bore": "Minotauro furo",
             "array": "Array de radar",
             "hardframe-left": "Armado esquerdo do quadro hard",
             "liquidator-left": "Braço esquerdo do liquidatário",
@@ -253,7 +248,9 @@
             "minotaur": "Canhão Minotauro",
             "minotaur-laser": "Laser Minotauro",
             "precision": "Laser Minotauro Precisão",
-            "mineral": "Plataforma de processamento mineral"
+            "mineral": "Plataforma de processamento mineral",
+            "daedalus": "Motor Dédalo",
+            "bore": "Furo Minotauro"
         },
         "exosuit": {
             "aeration": "Membrana de aeração",
@@ -334,7 +331,6 @@
             "pulse-upgrade": "Atualização do motor de pulso",
             "aquajets": "Aqua-Jets",
             "apollo": "Estatueta de Apollo",
-            "atlas": "Estatueta do atlas",
             "nada": "NADA Feliz",
             "null": "-Null- Figure",
             "conflict": "Scanner de conflito",
@@ -359,7 +355,6 @@
             "pilot": "Interface piloto",
             "grafted": "Olhos enxertados",
             "grafted-upgrade": "Olhos enxertados atualizando",
-            "spewing": "Vomitando aberturas",
             "spewing-upgrade": "Atualização de respiradouros",
             "scream": "Gritar supressor",
             "scream-upgrade": "Grito supressor upgrade",
@@ -373,7 +368,8 @@
             "saline": "Carapaça salina",
             "wormhole": "Cérebro de buraco de minhoca",
             "neural": "Blindagem neural",
-            "vesper": "Vela de Vesper"
+            "vesper": "Vela de Vesper",
+            "spewing": "Vomitando respiradouros"
         },
         "multi-tool": {
             "mining-laser": "Laser de mineração",
@@ -396,13 +392,11 @@
             "boltcaster-rm": "Boltcaster Ricochet Módulo",
             "barrel-ionizer": "Ionizador de barril",
             "boltcaster-upgrade": "Atualização do Boltcaster",
-            "forbidden": "Módulo proibido",
             "geology": "CANNON GEOLOGIA",
             "geology-upgrade": "Atualização de canhão de geologia",
             "neutron": "Canhão de nêutrons",
             "p-field": "Compressor de campo P.",
             "neutron-upgrade": "Upgrade de canhão de nêutrons",
-            "plasma-launcher": "Lançador de plasma",
             "plasma-upgrade": "Atualização do lançador de plasma",
             "pulse-spitter": "Spitter de pulso",
             "amplified": "Cartuchos amplificados",
@@ -419,7 +413,8 @@
             "personal": "FORCEFIELTO PESSOAL",
             "terrian": "Manipulador de terreno",
             "runic-lens": "Lente rúnica",
-            "hijacked": "Laser sequestrado"
+            "hijacked": "Laser sequestrado",
+            "forbidden": "Módulo Proibido"
         },
         "other": {
             "freighter-hyper": "Hiperdrive",
@@ -519,13 +514,11 @@
             "starseed": "Semente de estrela",
             "jetpack": "Jetpack",
             "jetpack-upgrade": "Atualização do Jetpack",
-            "boots": "Botas de foguete",
             "skiff": "EXO Skiff",
             "exocraft": "SOMOÇÃO EXOCRAVEL",
             "hazmat": "Manoplas Haz-Mat",
             "nutrient": "Ingestão de nutrientes",
             "refiner": "Refinador pessoal",
-            "trade": "Foguete comercial",
             "artemis-translator": "Tradutor de Artemis",
             "simple": "Tradutor simples",
             "superior": "Tradutor superior",
@@ -539,7 +532,6 @@
     },
     "moduleSelection": {
         "core": "Módulo Core (necessário)",
-        "bonus": "Módulos de bônus",
         "upgrade": "Módulos de atualização",
         "reactor": "Módulos do reator",
         "cosmetic": "Módulos cosméticos",

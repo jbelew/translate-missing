@@ -64,7 +64,6 @@
             "error": "Benutzerstatistiken nicht laden. Bitte versuchen Sie es später erneut.",
             "starshipChartTitle": "Starship -Technologien",
             "multitoolChartTitle": "Multi-Tool-Technologien",
-            "corvetteChartTitle": "Corvette -Technologien",
             "closeButton": "Schließen"
         },
         "optimizationAlert": {
@@ -75,11 +74,11 @@
             "forceOptimizeButton": "Optimierung erzwingen"
         },
         "shareLink": {
-            "description": "Kopieren Sie den folgenden Link, um Ihr aktuelles Netzlayout zu teilen. Bitte beachten Sie, dass diese URL ein Schnappschuss ist und nicht automatisch aktualisiert wird.",
             "copyButton": "Link kopieren",
             "copiedButton": "Kopiert!",
             "closeButton": "Schließen",
-            "openLink": "Link öffnen"
+            "openLink": "Link öffnen",
+            "description": "Kopieren Sie den Link unten, um Ihr aktuelles Rasterlayout zu teilen. Bitte beachten Sie, dass diese URL eine Momentaufnahme ist und nicht automatisch aktualisiert wird."
         }
     },
     "footer": {
@@ -111,7 +110,6 @@
         "corvette": "Corvette (Beta)"
     },
     "techTree": {
-        "loading": "TECHNOLOGIE WIRD GELADEN",
         "tooltips": {
             "insufficientSpace": "Nicht genug Platz!",
             "validSolve": "Gültige Lösung!",
@@ -158,7 +156,6 @@
             "aquajet": "Aqua-Jets",
             "bobble": "Figuren",
             "scanner": "Scanner",
-            "economy": "Wirtschafts-Scanner",
             "cargo": "Frachtscan-Deflektor",
             "conflict": "Konflikt-Scanner",
             "trails": "Raumschiff-Spuren",
@@ -182,13 +179,11 @@
         "multi-tool": {
             "hijacked": "Gekaperter Laser",
             "mining-laser": "Minenlaser",
-            "mining-beam": "Minenstrahl",
             "analysis": "Analyse-Visier",
             "fishing": "Angelausrüstung",
             "mt-scanner": "Scanner",
             "survey": "Analysevisier",
             "blaze-javelin": "Glutspeer",
-            "boltcaster": "Blitzwerfer",
             "bolt-caster": "Boltcaster",
             "geology": "Geologiekanone",
             "neutron": "Neutronenkanone",
@@ -201,7 +196,8 @@
             "paralysis": "Paralysemörser",
             "personal": "Eigenes Kraftfeld",
             "terrian": "Terrainmanipulator",
-            "runic": "Runenobjektiv"
+            "runic": "Runenobjektiv",
+            "mining-beam": "Bergbaustrahl"
         },
         "other": {
             "freighter-hyper": "Hyperantrieb",
@@ -216,7 +212,6 @@
         },
         "exocraft": {
             "fusion": "Fusionsantrieb",
-            "icarus": "Ikarus-Treibstoffsystem",
             "boost": "Exocraft-Boost",
             "slide": "Hochgleit-Federung",
             "drift": "Drift-Federung",
@@ -276,7 +271,6 @@
             "boots": "Raketenstiefel",
             "skiff": "Exo-Skiff",
             "exocraft": "Exocraft-Anrufeinheit",
-            "hazmat": "Haz-Mat-Handschuhe",
             "nutrient": "Nährstoff-Aufnehmer",
             "refiner": "Persönlicher Raffiner",
             "trade": "Handelsrakete",
@@ -304,7 +298,6 @@
             "phase-beam": "Phasenstrahler",
             "fourier": "Fourier-Begrenzer",
             "phase-upgrade": "Phasenstrahl-Upgrade",
-            "photon": "Photonenkanone",
             "nonlinear": "Nichtlineare Optik",
             "photon-upgrade": "Photonenkanone-Upgrade",
             "positron": "Positronenwerfer",
@@ -350,7 +343,6 @@
             "stealth-trail": "Tarn-Raumschiffspur",
             "golden-trail": "Goldene Raumschiffspur",
             "chromatic-trail": "Chromatische Raumschiffspur",
-            "teleport": "Teleportempfänger",
             "cannon": "Wächterknone",
             "aeron": "Aeron-Schild",
             "anti-gravity": "Antischwerkraftbrunnen",
@@ -367,19 +359,17 @@
             "assembly-upgrade": "Neuralanordnung-Upgrade",
             "chloroplast": "Chloroplastenmembran",
             "singularity": "Singularitätskortex",
-            "singularity-upgrade": "Singularitätkortex-Upgrade",
-            "pulsing": "Puls-Herz",
             "pulsing-upgrade": "Puls-Herz-Upgrade",
             "saline": "Salzwasser-Schutzhülle",
             "wormhole": "Wurmlochgehirn",
             "neural": "Neuronale Abschirmung",
-            "vesper": "Vesper-Segel"
+            "vesper": "Vesper-Segel",
+            "photon": "Photonenkanone",
+            "teleport": "Teleport-Empfänger"
         },
         "multi-tool": {
             "mining-laser": "Minenlaser",
             "advanced-mining": "Fortgeschrittener Minenlaser",
-            "optical": "Optischer Bohrer",
-            "mining-upgrade": "Minenlaser-Upgrade",
             "analysis": "Paralyse-Mörser",
             "fishing": "Angelausrüstung",
             "mt-scanner": "Scanner",
@@ -402,7 +392,6 @@
             "neutron": "Neutronenkanone",
             "p-field": "P-Feld-Kompressor",
             "neutron-upgrade": "Neutronenkanone-Upgrade",
-            "plasma-launcher": "Plasmawerfer",
             "plasma-upgrade": "Plasmawerfer-Upgrade",
             "pulse-spitter": "Impulswerfer",
             "amplified": "Verstärkte Kartuschen",
@@ -415,11 +404,13 @@
             "cloaking": "Tarngerät",
             "combat": "Kampfvisier",
             "voltaic-amplifier": "Voltaischer Verstärker",
-            "paralysis": "Paralyse-Mörser",
             "personal": "Eigenes Kraftfeld",
             "terrian": "Terrainmanipulator",
             "runic-lens": "Runenobjektiv",
-            "hijacked": "Gekaperter Laser"
+            "hijacked": "Gekaperter Laser",
+            "mining-upgrade": "Bergbau-Laser-Upgrade",
+            "plasma-launcher": "Plasmawerfer",
+            "paralysis": "Lähmungsmörser"
         },
         "other": {
             "freighter-hyper": "Hyperantrieb",
@@ -465,7 +456,6 @@
             "power": "Leistungsresonator",
             "mineral": "Mineralverarbeitungsanlage",
             "humboldt": "Humboldt-Antrieb",
-            "humboldt-upgrade": "Humboldt-Antrieb-Upgrade",
             "tethys": "Tethys-Strahl",
             "nautilon": "Nautilon-Kanone",
             "nautilon-upgrade": "Nautilon-Kanone-Upgrade",
@@ -491,7 +481,8 @@
             "precision": "Präzisions-Minotaurus-Laser",
             "osmatic": "Osmatischer Generator",
             "servos": "Selbstschmierende Servos",
-            "liquidator-upgrade": "Flammenwerfer-Upgrade"
+            "liquidator-upgrade": "Flammenwerfer-Upgrade",
+            "humboldt-upgrade": "Upgrade des Humboldt-Antriebs"
         },
         "exosuit": {
             "aeration": "Belüftungsmembran",
@@ -508,7 +499,6 @@
             "thermic-upgrade": "Thermoschicht-Upgrade",
             "toxin": "Toxin-Unterdrücker",
             "toxin-upgrade": "Toxin-Unterdrücker-Upgrade",
-            "forbidden": "Verbotenes Exo-Anzug-Modul",
             "life": "Lebenserhaltung",
             "life-upgrade": "Lebenserhaltung-Upgrade",
             "denier": "Mal des Leugners",
@@ -534,7 +524,8 @@
             "recycler": "Sauerstoff-Recycler",
             "neural": "Neuralstimulator",
             "waterjets": "Effiziente Wasserstrahlen",
-            "rerouter": "Sauerstoff-Umleiter"
+            "rerouter": "Sauerstoff-Umleiter",
+            "forbidden": "Verbotenes Exosuit-Modul"
         }
     },
     "moduleSelection": {
