@@ -2,6 +2,19 @@
 
 <!-- version list -->
 
+## v1.2.0 (2025-10-21)
+
+### Features
+
+- **args**: Added support for "dry-run" processing.
+  ([`2ad365a`](https://github.com/jbelew/translate-missing/commit/2ad365acd25a93d0fb0c2c3c1d02ec6c9db37e2f))
+
+### Testing
+
+- **sample-data**: Randomly removed 2% of keys in sample data for better example runs.
+  ([`66fe6c6`](https://github.com/jbelew/translate-missing/commit/66fe6c6951206d0d70031810a81b086d9f0602f2))
+
+
 ## v1.1.0 (2025-10-19)
 
 ### Chores
